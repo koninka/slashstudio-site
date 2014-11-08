@@ -3,6 +3,7 @@
 	<link href="/css/main.css" rel="stylesheet" />
 {/block}
 {block name='page'}
+	{include file="header.tpl"}
 	<div id="wrap">
 		{block name='div.main'}{/block}
 	</div>

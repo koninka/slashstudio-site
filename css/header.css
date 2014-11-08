@@ -1,0 +1,12 @@
+header {
+	height: 69px;
+	background: url('/images/header_bg.jpg');
+    padding: 0 300px;
+}
+
+#logo {
+	display: block;
+	background: #e95b28 url('/images/logo.png');
+	width: 300px;
+	height: 69px;
+}

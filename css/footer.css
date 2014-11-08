@@ -1,0 +1,27 @@
+footer {
+	background: url('/images/footer.png') right bottom no-repeat;
+}
+
+footer section {
+	display: inline-block;
+	padding: 80px 120px;
+}
+
+footer section a {
+	padding-left: 70px;
+	padding-top: 5px;
+	min-height: 40px;
+	display: block;
+	font-size: 200%;
+	text-decoration: none;
+	color: #813589;
+	margin-top: 40px;
+}
+
+footer a.tel {
+	background: url('/images/tel.png') left center no-repeat;
+}
+
+footer a.mail {
+	background: url('/images/mail.png') left center no-repeat;
+}
