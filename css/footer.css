@@ -1,27 +1,36 @@
 footer {
-	background: url('/images/footer.png') right bottom no-repeat;
+	margin-top: 4%;
+	background: white;
+	padding: 80px 80px 40px;
 }
 
-footer section {
-	display: inline-block;
-	padding: 80px 120px;
+footer div.text {
+	background: #a791c3;
+	text-align: left;
+	padding: 50px 100px;
+	width: 40%;
+	margin: 0 auto 50px;
+	font-size: 100%;
+	line-height: 1.6;
 }
 
-footer section a {
-	padding-left: 70px;
-	padding-top: 5px;
-	min-height: 40px;
-	display: block;
-	font-size: 200%;
+footer div.text h1 {
+	margin-bottom: 30px;
+	text-align: center;
+	font-family: Verdana;
+	font-size: 160%;
+}
+
+footer div.center_button {
+	margin-top: 50px;
+}
+
+footer div.info {
+	text-align: center;
+	font-weight: bold;
+}
+
+footer div.info a {
 	text-decoration: none;
-	color: #813589;
-	margin-top: 40px;
-}
-
-footer a.tel {
-	background: url('/images/tel.png') left center no-repeat;
-}
-
-footer a.mail {
-	background: url('/images/mail.png') left center no-repeat;
+	color: black;
 }

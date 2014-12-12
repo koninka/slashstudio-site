@@ -1,12 +1,42 @@
 header {
-	height: 69px;
-	background: url('/images/header_bg.jpg');
-    padding: 0 300px;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	background: #4F2681;
+	z-index: 10;
 }
 
-#logo {
-	display: block;
-	background: #e95b28 url('/images/logo.png');
-	width: 300px;
-	height: 69px;
+header img {
+	margin-top: 10px;
+	margin-left: 20px;
+	height: 40px;
+}
+
+header ul {
+	vertical-align: top;
+	margin-top: 22px;
+	margin-right: 20px;
+	float: right;
+	display: inline-block;
+}
+
+header ul li {
+	display: inline-block;
+	color: #50f5f3;
+	font-size: 110%;
+}
+
+header ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+header ul li a:hover {
+	color: #50f5f3;
+}
+
+header ul li span {
+	display: inline-block;
+	color: white;
+	margin: 0 25px;
 }

@@ -1,10 +1,12 @@
 <footer>
-	<section id="block_4">
-		<h1>Call us</h1>
-		<a href="tel:+79146123123" class="tel">8 (914) 612-31-23</a>
-   	</section>
-   	<section id="block_5">
-		<h1>Write us</h1>
-		<a href="mailto:slashstudio@mail.ru" class="mail">slashstudio@mail.ru</a>
-   	</section>
+	<div class="text">
+		<h1>В одно касание</h1>
+		<p>We're always on the lookout for likeminded people, whether you're a start-up company with big ideas or an established brand ready to make a big impact. If you're planning a project you'd like to discuss or interested in working with us please get in touch - we'd love to hear from you.</p>
+		<div class="center_button" id="view_all">
+			<a href="#" class="button">Связаться с нами</a>
+		</div>
+	</div>
+	<div class="info">
+		<a href="/">slash/studio 2014</a>
+	</div>
 </footer>

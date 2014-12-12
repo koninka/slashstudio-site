@@ -1,111 +1,163 @@
-section > h1 {
-	font-family: "Arial Black";
-	font-weight: bold;
-	font-size: 200%;
-	display: inline-block;
-	padding: 0 0 14px 0;
-	background: url('/images/h1_bg.jpg') center bottom repeat-x;
-}
-
 #block_1 {
-	padding: 80px 120px;
+	height: 800px;
+	position: relative;
+	background: #4f2681;
+	z-index: 11;
 }
 
-#block_1 > h1 {
-	background-position: right bottom;
+#block_1 div.wraper_start {
+	position: relative; 
+	text-align: center;
+	clear: both;
 }
 
-#block_1 ul {
+#floater {
+	float: left;
+	height: 50%;
+	margin-top: -120px;
+}
+
+#block_1 div.wraper_start h1 {
+	font-size: 300%;
+	font-family: "Orator Std";
+	text-transform: uppercase;
+	margin-top: 100px;
+	color: #b4b4b4;
+}
+
+#main_menu {
+	position: absolute;
+	bottom: 40px;
+	width: 100%;
 	text-align: center;
 }
 
-#block_1 ul li {
+#main_menu ul li {
 	display: inline-block;
-	width: 33%;
-	vertical-align: top;
-	margin: 80px auto;
-}
-
-#block_1 ul li:last-child article {
-	margin-right: 0;
-}
-
-#block_1 ul li article {
-	margin: 0 10% 0 0;
-}
-
-#block_1 ul li article img {
-	display: block;
-	text-align: center;
-	margin: 50px auto 100px;
-}
-
-#block_1 ul li article h1 {
-	font-size: 190%;
-	font-weight: bold;
-	margin: 15px 0 40px;
-	text-align: left;
-}
-
-#block_1 ul li article div.text {
+	color: #50f5f3;
 	font-size: 110%;
-	line-height: 1.5;
-	text-align: left;
+}
+
+#main_menu ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+#main_menu ul li a:hover {
+	color: #50f5f3;
+}
+
+#main_menu ul li span {
+	display: inline-block;
+	color: white;
+	margin: 0 25px;
 }
 
 #block_2 {
-	padding: 80px 120px;
+	padding: 8% 8% 8%;
+	position: relative;
 }
 
-#block_2 div.portfolio {
-	margin: 80px 0;
-}
-
-#block_2 div.portfolio ul {
+#block_2 div.services ul li {
 	display: inline-block;
+	width: 33.3%;
 	vertical-align: top;
-	width: 33%;
+	text-align: left;
+	min-height: 540px;
+	z-index: 2;
+	position: relative;
+	/*-webkit-transition: all 0.2s ease-out;
+     -moz-transition: all 0.2s ease-out;
+     -o-transition: all 0.2s ease-out;
+     transition: all 0.2s ease-out;*/
 }
 
-#block_2 div.portfolio ul li {
+#block_2 div.services ul {
+	z-index: 5;
+	position: relative;
+}
+
+#block_2 div.services ul li img {
 	display: block;
-	margin: 8px 5px;
-}
-
-#block_2 div.portfolio ul li img {
-	width: 100%;
-}
-
-#block_2 div.portfolio ul li div.caption {
-	display: block;
-	background: #813589;
-	color: white;
 	text-align: center;
-	padding: 30px;
-	font-size: 110%;
-	line-height: 1.5;
-	display: none;
-	margin-top: -2px;
+	margin: 0 auto;
+	margin-bottom: 70px;
+}
+
+#block_2 div.services ul li h2 {
+	margin-bottom: 20px;
+	font-family: Verdana;
+	font-size: 130%;
+}
+
+#block_2 div.services ul li div.text {
+	line-height: 1.6;
+}
+
+#block_2 div.services ul li div.wrap {
+	padding: 80px 80px 80px;
+}
+
+#block_2 div.services ul li:nth-child(odd) {
+	background: white;
+}
+
+#block_2 div.services ul li:nth-child(even) {
+	background: #a791c3;
+}
+
+#block_3 img {
+	width: 50%;
+	vertical-align: top;
+}
+
+#block_2 h1.block_h1, #block_3 h1.block_h1 {
+	text-align: left;
+	display: inline-block;
+	background: white;
+	padding: 12px 20px;
+	font-size: 130%;
+	font-weight: bold;
+	color: #4f2681;
+}
+
+
+#block_2 h1.block_h1 {
+
+	font-size: 130%;
 }
 
 #block_3 {
-	padding: 100px 150px;
-	background-image: url("/images/work_bg.jpg");
-  	background-repeat: no-repeat;
-  	background-size: cover;
-  	background-position: center center;
-  	color: white;
+	padding: 0 8%;
 }
 
-#block_3 > h1 {
-	float: left;
-	background-position: left bottom;
-	vertical-align: top;
+#block_3 img {
+	position: relative;
 }
 
-#block_3 div.text {
-	margin-left: 350px;
-	font-size: 110%;
-	line-height: 1.5;
-	vertical-align: top;
+div.center_button {
+	text-align: center;
+}
+
+#block_3 div.center_button {
+	margin-top: 100px;
+}
+
+a.button {
+	border: 4px #4f2681 solid;
+	padding: 13px 30px;
+	font-size: 130%;
+	font-weight: bold;
+	display: inline-block;
+	color: #4f2681;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+a.button:hover {
+	background: #4f2681;
+	color: white;
 }
