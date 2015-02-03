@@ -1,6 +1,7 @@
 {extends file='page.tpl'}
 {block name='links' append}
 	<link href="/css/index.css" rel="stylesheet" />
+	<link href="/css/block1.css" rel="stylesheet" />
 	<link href="/css/header.css" rel="stylesheet" />
 	<link href="/css/footer.css" rel="stylesheet" />
 	<script src="/js/jquery.scrollorama.js"></script>
@@ -12,6 +13,7 @@
 			    });
 
 			    //scrollorama.animate('#first_p',{ delay: 250, duration: 350, property:'top', start:150, end:0 });
+
 			    scrollorama.animate('#block_2',{ delay: 250, duration: 500, property:'top', start:150, end:0 });
 			    scrollorama.animate('#block_2',{ delay: 250, duration: 500, property:'opacity', start:0, end:1 });
 
@@ -21,15 +23,15 @@
 
 			    var img_count = $('#block_3 img').length;
 			    for (var i = 0; i < img_count/2; i++) {
-			    	scrollorama.animate('#block_3 img:nth-child(' + (i*2 + 1) + ')',{ delay: 850 + i*500, duration: 400, property:'top', start:300, end:0 });
-			    	scrollorama.animate('#block_3 img:nth-child(' + (i*2 + 2) + ')',{ delay: 850 + i*500 + 100, duration: 400, property:'top', start:550, end:0 });
+			    	scrollorama.animate('#block_3 a:nth-child(' + (i*2 + 1) + ')',{ delay: 850 + i*500, duration: 350, property:'top', start:300, end:0 });
+			    	scrollorama.animate('#block_3 a:nth-child(' + (i*2 + 2) + ')',{ delay: 850 + i*500 + 100, duration: 550, property:'top', start:500, end:0 });
 
-			    	scrollorama.animate('#block_3 img:nth-child(' + (i*2 + 1) + ')',{ delay: 850 + i*500, duration: 400, property:'opacity', start:0, end:1 });
-			    	scrollorama.animate('#block_3 img:nth-child(' + (i*2 + 2) + ')',{ delay: 850 + i*500 + 100, duration: 400, property:'opacity', start:0, end:1 });	
+			    	scrollorama.animate('#block_3 a:nth-child(' + (i*2 + 1) + ')',{ delay: 850 + i*500, duration: 350, property:'opacity', start:0, end:1 });
+			    	scrollorama.animate('#block_3 a:nth-child(' + (i*2 + 2) + ')',{ delay: 850 + i*500 + 100, duration: 550, property:'opacity', start:0, end:1 });	
 			    }
 
-			    scrollorama.animate('#block_3 h1.block_h1',{ delay: 850, duration: 400, property:'top', start:300, end:0 });
-			    scrollorama.animate('#block_3 h1.block_h1',{ delay: 850, duration: 400, property:'opacity', start:0, end:1 });
+			    scrollorama.animate('#block_3 h1.block_h1',{ delay: 850, duration: 350, property:'top', start:300, end:0 });
+			    scrollorama.animate('#block_3 h1.block_h1',{ delay: 850, duration: 350, property:'opacity', start:0, end:1 });
 
 
 			    scrollorama.animate('#view_all',{ delay: 900 + (img_count/2)*500, duration: 250, property:'top', start:100, end:0 });
@@ -47,33 +49,8 @@
 	{/literal}
 {/block}
 {block name='div.main'}
-	<section id="block_1">
-    	<div id="floater">&nbsp;</div>
-		<div class="wraper_start">
-			<img class="logo" src="/images/logo.png" />
-			<h1>Web, design & more</h1>
-		</div>
-		<nav id="main_menu">
-			<ul>
-				<li><a href="#">Услуги</a><span>/</span></li>
-				<li><a href="#">Проекты</a><span>/</span></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-		</nav>
-	</section>
+	{include file="block1.tpl"}
 	<section id="block_2">
-		<!--<div class="parallax_block" id="p1">
-			<img src="/images/bg1.png" />
-		</div>
-		<div class="parallax_block" id="p2">
-			<img src="/images/bg1.png" />
-		</div>
-		<div class="parallax_block" id="p3">
-			<img src="/images/bg1.png" />
-		</div>
-		<div class="parallax_block" id="p4">
-			<img src="/images/bg1.png" />
-		</div>-->
 		<div class="services">
 			<h1 class="block_h1">Наши услуги</h1>
 			<ul>
@@ -102,7 +79,85 @@
 	<section id="block_3">
 		<h1 class="block_h1">Наши проекты</h1>
 		<div class="gallery">
-			<img src="/images/img4.png" /><img src="/images/img1.jpg" /><img src="/images/img3.jpg" /><img src="/images/img2.png" /><img src="/images/img4.png" /><img src="/images/img1.jpg" />
+			<a href="#">
+				<img src="/images/img4.png" />
+				<div class="caption">
+					<div class="child">
+						<div class="text">
+							<strong>Caption</strong>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</div>
+						<div class="href">
+							<span class="button">Посмотреть</span>
+						</div>
+					</div>
+					<div class="helper"></div>
+				</div>
+			</a><a href="#">
+				<img src="/images/img1.jpg" />
+				<div class="caption">
+					<div class="child">
+						<div class="text">
+							<strong>Caption</strong>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</div>
+						<div class="href">
+							<span class="button">Посмотреть</span>
+						</div>
+					</div>
+					<div class="helper"></div>
+				</div>
+			</a><a href="#">
+				<img src="/images/img3.jpg" />
+					<div class="caption">
+					<div class="child">
+						<div class="text">
+							<strong>Caption</strong>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</div>
+						<div class="href">
+							<span class="button">Посмотреть</span>
+						</div>
+					</div>
+					<div class="helper"></div>
+				</div>
+			</a><a href="#"><img src="/images/img2.png" /><div class="caption">
+					<div class="child">
+						<div class="text">
+							<strong>Caption</strong>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</div>
+						<div class="href">
+							<span class="button">Посмотреть</span>
+						</div>
+					</div>
+					<div class="helper"></div>
+				</div>
+			</a><a href="#"><img src="/images/img4.png" /><div class="caption">
+					<div class="child">
+						<div class="text">
+							<strong>Caption</strong>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</div>
+						<div class="href">
+							<span class="button">Посмотреть</span>
+						</div>
+					</div>
+					<div class="helper"></div>
+				</div>
+			</a><a href="#"><img src="/images/img1.jpg" /><div class="caption">
+					<div class="child">
+						<div class="text">
+							<strong>Caption</strong>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</div>
+						<div class="href">
+							<span class="button">Посмотреть</span>
+						</div>
+					</div>
+					<div class="helper"></div>
+				</div>
+			</a>
 		</div>
 		<div class="center_button" id="view_all">
 			<a href="#" class="button">Посмотреть все</a>

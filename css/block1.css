@@ -1,0 +1,54 @@
+#block_1 {
+	height: 800px;
+	position: relative;
+	background: #4f2681;
+	z-index: 11;
+}
+
+#block_1 div.wraper_start {
+	position: relative; 
+	text-align: center;
+	clear: both;
+}
+
+#floater {
+	float: left;
+	height: 50%;
+	margin-top: -120px;
+}
+
+#block_1 div.wraper_start h1 {
+	font-size: 300%;
+	font-family: "Orator Std";
+	text-transform: uppercase;
+	margin-top: 100px;
+	color: #b4b4b4;
+}
+
+#main_menu {
+	position: absolute;
+	bottom: 40px;
+	width: 100%;
+	text-align: center;
+}
+
+#main_menu ul li {
+	display: inline-block;
+	color: #50f5f3;
+	font-size: 110%;
+}
+
+#main_menu ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+#main_menu ul li a:hover {
+	color: #50f5f3;
+}
+
+#main_menu ul li span {
+	display: inline-block;
+	color: white;
+	margin: 0 25px;
+}

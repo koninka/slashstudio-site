@@ -4,17 +4,20 @@ footer {
 	padding: 80px 80px 40px;
 }
 
-footer div.text {
+#get_contact.non_vis {
+	display: none;
+}
+
+#get_contact {
 	background: #a791c3;
 	text-align: left;
 	padding: 50px 100px;
 	width: 40%;
 	margin: 0 auto 50px;
 	font-size: 100%;
-	line-height: 1.6;
 }
 
-footer div.text h1 {
+#get_contact h1 {
 	margin-bottom: 30px;
 	text-align: center;
 	font-family: Verdana;
@@ -34,3 +37,8 @@ footer div.info a {
 	text-decoration: none;
 	color: black;
 }
+
+#get_contact.non_vis {
+	display: none;
+}
+

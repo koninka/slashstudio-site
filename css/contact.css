@@ -1,0 +1,68 @@
+#block_contact {
+	padding: 8% 8% 0;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#block_contact h2.slash {
+	margin-bottom: 30px;
+	text-align: center;
+	font-family: Verdana;
+	font-size: 160%;
+}
+
+#block_contact a.tel, #block_contact a.email {
+	display: block;
+	color: #4f2681;
+	font-size: 130%;
+	margin: 10px 0;
+	text-decoration: none;
+	text-align: center;
+}
+
+#block_contact div.wrap_contact {
+	padding: 50px 100px;
+	background: white;
+}
+
+#block_contact div.wrap_contact div.to_form {
+	text-align: center;
+	padding: 0 0 0 20px;
+	width: 70%;
+	font-weight: bold;
+	margin: 50px auto 30px;
+}
+
+#block_contact div.wrap_contact form {
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#block_contact div.wrap_contact input, #block_contact div.wrap_contact textarea {
+	display: block;
+	padding: 10px;
+	width: 100%;
+	font-size: 120%;
+	border: 2px #bbb solid;
+}
+
+#block_contact div.wrap_contact div.form_block label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+#block_contact div.wrap_contact div.form_block {
+	margin: 15px 0;
+}
+
+#block_contact div.wrap_contact input:hover, #block_contact div.wrap_contact textarea:hover,
+#block_contact div.wrap_contact input:focus, #block_contact div.wrap_contact textarea:focus {
+	border: 2px #4f2681 solid;
+}
+
+#block_contact div.wrap_contact form button.button {
+	margin: 30px auto 0;
+}

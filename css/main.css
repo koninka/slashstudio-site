@@ -6,4 +6,44 @@ body {
 
 #wrap {    
 	height: auto;
+	width: 100%;
+}
+
+span.button, a.button, button.button {
+	border: 4px #4f2681 solid;
+	padding: 13px 30px;
+	font-size: 130%;
+	font-weight: bold;
+	display: inline-block;
+	color: #4f2681;
+	text-decoration: none;
+	background: transparent;
+	cursor: pointer;
+	-webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+span.button:hover, a.button:hover, button.button:hover, a.button.active {
+	background: #4f2681;
+	color: white;
+}
+
+div.center_button {
+	text-align: center;
+}
+
+div.text {
+	line-height: 1.6;
+}
+
+h1.block_h1 {
+	text-align: left;
+	display: inline-block;
+	background: white;
+	padding: 12px 20px;
+	font-size: 130%;
+	font-weight: bold;
+	color: #4f2681;
 }

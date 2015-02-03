@@ -4,7 +4,7 @@
 {/block}
 {block name='page'}
 	{include file="header.tpl"}
-	<div id="wrap" class="scrollblock" >
+	<div id="wrap" class="scrollblock">
 		{block name='div.main'}{/block}
 	</div>
 {/block}
