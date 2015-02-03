@@ -1,0 +1,99 @@
+#block_projects {
+	position: relative;
+}
+
+#block_projects div.gallery a {
+	width: 50%;
+	position: relative;
+	display: inline-block;
+}
+
+#block_projects img {
+	width: 100%;
+	vertical-align: top;
+}
+
+#block_projects div.caption {
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	vertical-align: top;
+	text-align: center;
+	z-index: 1;
+	opacity: 0;
+	color: white;
+	background: url('/images/tr_bg.png') repeat;
+    transition: all 0.4s ease-out;
+}
+
+#block_projects div.caption strong {
+	text-align: center;
+	display: block;
+	font-size: 250%;
+	margin-bottom: 35px;
+}
+
+#block_projects div.caption p {
+	font-size: 120%;
+	margin-bottom: 35px;
+}
+
+#block_projects div.caption div.text {
+	position: relative;
+	top: -20px;
+	-webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+}
+
+#block_projects div.caption:hover div.text {
+	top: 0px;
+}
+
+#block_projects div.caption div.href {
+	position: relative;
+	bottom: -20px;
+	-webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+}
+
+#block_projects div.caption:hover div.href {
+	bottom: 0;
+}
+
+#block_projects div.caption .child {
+    display:-moz-inline-box;
+    display:inline-block;
+    vertical-align:middle;
+    zoom:1;
+    //display:inline;
+}
+#block_projects div.caption .helper {
+    display:-moz-inline-box;
+    display:inline-block;
+    vertical-align:middle;
+    height:100%;
+    width:0px;
+    zoom:1;
+    //display:inline;
+}
+
+
+#block_projects div.gallery a:hover div.caption {
+	opacity: 1;
+}
+
+#block_projects {
+	padding: 8% 8% 0;
+}
+
+#block_projects img {
+	position: relative;
+}
+
+#block_projects div.center_button {
+	margin-top: 100px;
+}
