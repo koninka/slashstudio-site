@@ -3,6 +3,6 @@
 	require_once SCRIPTS_ROOT . 'constants.php';
 	require_once SCRIPTS_ROOT . 'settings.php';
 
-	$smarty->display('projects_all.tpl');
+	$smarty->display('project.tpl');
 
 ?>

@@ -1,5 +1,6 @@
 #block_projects {
 	position: relative;
+	padding: 8% 8% 0;
 }
 
 #block_projects div.gallery a {
@@ -86,14 +87,45 @@
 	opacity: 1;
 }
 
-#block_projects {
-	padding: 8% 8% 0;
-}
-
 #block_projects img {
 	position: relative;
 }
 
 #block_projects div.center_button {
 	margin-top: 100px;
+}
+
+/*-------------------------*/
+
+#block_project {
+	position: relative;
+	padding: 8% 8%;
+}
+
+#block_project div.wrapper_project {
+	padding: 50px 100px;
+	background: white;
+	margin: 0 auto;
+}
+
+#block_project div.wrapper_project h2.type {
+	margin-bottom: 30px;
+	font-family: Verdana;
+	font-size: 160%;
+}
+
+#block_project div.wrapper_project div.info p {
+	margin-bottom: 20px;
+}
+
+#block_project div.wrapper_project div.info a.button {
+	margin-bottom: 80px;
+}
+
+#block_project div.wrapper_project div.gallery img {
+	width: 100%;
+}
+
+#block_projects.watch_other {
+	padding-top: 0;
 }
